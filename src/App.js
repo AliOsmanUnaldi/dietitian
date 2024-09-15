@@ -16,28 +16,28 @@ function App() {
         <Navbar />
         <div className="content">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/dietitian/">
               <Home />
             </Route>
-            <Route path="/create">
+            <Route path="/dietitian/create">
               <Create />
             </Route>
-            <Route exact path="/blogs">
+            <Route exact path="/dietitian/blogs">
               <Blogs />
             </Route>
-            <Route path="/blogs/:id">
+            <Route path="/dietitian/blogs/:id">
               <BlogDetails />
             </Route>
-            <Route exact path="/recipes">
+            <Route exact path="/dietitian/recipes">
               <Recipes />
             </Route>
-            <Route path="/recipes/:id">
+            <Route path="/dietitian/recipes/:id">
               <RecipeDetails />
             </Route>
-            <Route path="/about">
+            <Route path="/dietitian/about">
               <About />
             </Route>
-            <Route path="/contact">
+            <Route path="/dietitian/contact">
               <Contact />
             </Route>
           </Switch>
