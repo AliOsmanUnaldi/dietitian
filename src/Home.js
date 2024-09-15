@@ -10,7 +10,7 @@ const Home = () => {
                      böylece uzman bir diyetisyenden klinik değerlendirmeyi kendi evinizin rahatlığında alabilirsiniz.
                       Bugün sanal danışmanlık randevunuzu talep edin.
                 </p>
-                <button className='btn'><Link to="/contact">Yeni yaşam tarzına ilk adım</Link></button>
+                <button className='btn'><Link to="/dietitian/contact">Yeni yaşam tarzına ilk adım</Link></button>
             </div>
         </div>
     )
