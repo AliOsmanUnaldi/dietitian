@@ -10,7 +10,6 @@ const Navbar = () => {
         <li><Link to="/blogs">Bloglar</Link></li>
         <li><Link to="/about">Hakkında</Link></li>
         <li><Link to="/contact"><button className='btn'>İletişim</button></Link></li>
-        <li><Link to="/test">Test</Link></li>
       </ul>
     </nav>
   );

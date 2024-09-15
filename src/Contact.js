@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const Contact = () => {
-    // Form verilerini yönetmek için state
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -10,7 +9,6 @@ const Contact = () => {
 
     const [submitted, setSubmitted] = useState(false);
 
-    // Input değişikliklerini izleme fonksiyonu
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -19,11 +17,10 @@ const Contact = () => {
         });
     };
 
-    // Form gönderme fonksiyonu
     const handleSubmit = (e) => {
-        e.preventDefault(); // Sayfanın yeniden yüklenmesini önler
-        console.log('Form Data:', formData); // Burada veriyi backend'e gönderebilirsiniz
-        setSubmitted(true); // Gönderildi olarak işaretler
+        e.preventDefault(); 
+        console.log('Form Data:', formData);
+        setSubmitted(true); 
     };
 
     return (

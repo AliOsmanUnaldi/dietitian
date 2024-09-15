@@ -1,17 +1,19 @@
-import RecipeList from "./RecipeList";
-import useFetch from "./useFetch";
+import RecipeList from './RecipeList';
+import recipes from './recipes.json';
 
 const Recipes = () => {
-    const {data: recipes , isPending, error} = useFetch('http://localhost:8000/recipes')
+    if (!recipes || recipes.length === 0) {
+        return (
+            <div className="home">
+                <p>No recipes available.</p>
+            </div>
+        );
+    }
 
     return (
         <div className="home">
-
-            {error && <div>{error}</div>}
-            {isPending && <div>Loading..</div>}
-            {recipes && <RecipeList recipes={recipes} title="Tüm tarifler"/>}
+            <RecipeList recipes={recipes} title="All recipes"/>
         </div>
     );
-}
-
+};
 export default Recipes;

@@ -1,17 +1,21 @@
+import React from 'react';
 import BlogList from "./BlogList";
-import useFetch from "./useFetch";
+import blogs from "./blogs.json";
 
 const Blogs = () => {
-    const {data: blogs , isPending, error} = useFetch('http://localhost:8000/blogs')
+    if (!blogs || blogs.length === 0) {
+        return (
+            <div className="home">
+                <p>No blogs available.</p>
+            </div>
+        );
+    }
 
     return (
         <div className="home">
-
-            {error && <div>{error}</div>}
-            {isPending && <div>Loading..</div>}
-            {blogs && <BlogList blogs={blogs} title="All blogs"/>}
+            <BlogList blogs={blogs} title="All blogs"/>
         </div>
     );
-}
+};
 
 export default Blogs;

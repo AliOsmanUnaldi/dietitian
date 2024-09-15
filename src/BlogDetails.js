@@ -1,23 +1,30 @@
-import { useParams } from "react-router-dom/cjs/react-router-dom.min";
-import useFetch from "./useFetch";
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import blogData from './blogs.json';
 
 const BlogDetails = () => {
-    const {id} = useParams(); 
-    const {data: blog, isPending, error} = useFetch('http://localhost:8000/blogs/' + id);
+    const { id } = useParams(); 
+    const [blog, setBlog] = useState(null);
 
-    return (<div className="blog-details">
-        {isPending && <div>Loading..</div>}
-        {error && <div> {error.name} </div>}
-        {blog && (
-            <article>
-                <h2> {blog.title} </h2>
-                <p>Written by {blog.author}</p>
-                <img src="https://scontent.fesb6-1.fna.fbcdn.net/v/t39.30808-6/459982726_1589702011583564_3547476891107565842_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=S0uwJknqwI8Q7kNvgHQa7Q4&_nc_ht=scontent.fesb6-1.fna&oh=00_AYCqiz4UY1ZJte8CJ8nBYFdkBTK2vQfPzpSNpOd1eWfPUw&oe=66EBA9EA" alt="resim" />
-                <div> {blog.body} </div>
+    useEffect(() => {
+        const foundBlog = blogData.find(blog => blog.id === parseInt(id));
+        setBlog(foundBlog);
+    }, [id]);
+
+    return (
+        <div className="blog-details">
+            <h2>Blog Details - {id}</h2>
+            {blog ? (
+                <article>
+                    <h2> {blog.title} </h2>
+                    <img src={blog.image} alt="resim"/>
+                    <div> {blog.body} </div>
                 </article>
-        )
-        }
-    </div>);
-}
+            ) : (
+                <div>Blog not found</div>
+            )}
+        </div>
+    );
+};
 
 export default BlogDetails;

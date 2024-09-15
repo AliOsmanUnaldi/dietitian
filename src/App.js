@@ -8,7 +8,6 @@ import Recipes from './Recipes';
 import RecipeDetails from './RecipeDetails';
 import About from './About';
 import Contact from './Contact';
-import Test from './Test';
 
 function App() {
   return (
@@ -40,9 +39,6 @@ function App() {
             </Route>
             <Route path="/contact">
               <Contact />
-            </Route>
-            <Route path="/test">
-              <Test />
             </Route>
           </Switch>
         </div>
