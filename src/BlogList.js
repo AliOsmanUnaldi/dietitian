@@ -10,7 +10,7 @@ const BlogList = ({ blogs, title }) => {
                         <img src={blog.image} alt="resim" />
                         <h2>{blog.title}</h2>
                         <div className="caption">
-                            <Link to={`/blogs/${blog.id}`}>
+                            <Link to={`/dietitian/blogs/${blog.id}`}>
                             <h2>Makaleyi oku</h2>
                         </Link>
                         </div>

@@ -17,7 +17,7 @@ const RecipeList = ({ recipes, title }) => {
                         <div className="recipe-content">
                             <h3>{recipe.title}</h3>
                             <p>{truncateText(recipe.body, 300)}</p>
-                            <p><Link to={`/recipes/${recipe.id}`} className="read-more">Devamını Oku</Link></p>
+                            <p><Link to={`/dietitian/recipes/${recipe.id}`} className="read-more">Devamını Oku</Link></p>
                         </div>
                     </div>
                 ))}
