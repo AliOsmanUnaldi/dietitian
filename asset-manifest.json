@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/dietitian/static/css/main.a0c88854.css",
-    "main.js": "/dietitian/static/js/main.40379ecc.js",
+    "main.css": "/dietitian/static/css/main.110be74a.css",
+    "main.js": "/dietitian/static/js/main.268e18ff.js",
     "static/media/diyetisyen-background.jpg": "/dietitian/static/media/diyetisyen-background.9379edff01f70d59da0a.jpg",
     "index.html": "/dietitian/index.html",
-    "main.a0c88854.css.map": "/dietitian/static/css/main.a0c88854.css.map",
-    "main.40379ecc.js.map": "/dietitian/static/js/main.40379ecc.js.map"
+    "main.110be74a.css.map": "/dietitian/static/css/main.110be74a.css.map",
+    "main.268e18ff.js.map": "/dietitian/static/js/main.268e18ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0c88854.css",
-    "static/js/main.40379ecc.js"
+    "static/css/main.110be74a.css",
+    "static/js/main.268e18ff.js"
   ]
 }
