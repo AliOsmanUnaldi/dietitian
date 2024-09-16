@@ -7,7 +7,7 @@
 }
 
 body {
- background: #F5F5F5;
+  background: #F5F5F5;
 }
 
 a {
@@ -33,23 +33,37 @@ a {
   padding-right: 10%;
 }
 
+/* Hamburger butonu */
+.hamburger {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  /* Başlangıçta gizle */
+}
+
 .navbar h1 {
   width: 180px;
 }
 
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
 .navbar ul li {
   display: inline-block;
-  list-style: none;
   margin: 5px 20px;
   font-size: 16px;
 }
 
-.container{
+.container {
   padding-left: 10%;
   padding-right: 10%;
 }
 
-.btn{
+.btn {
   background: #FFF;
   color: #212121;
   padding: 14px 25px;
@@ -73,7 +87,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-} 
+}
 
 .hero-text {
   text-align: center;
@@ -145,7 +159,7 @@ a {
 
 }
 
-.blog-preview:hover .caption{
+.blog-preview:hover .caption {
   opacity: 1;
 }
 
@@ -172,7 +186,7 @@ a {
   margin: 80px auto;
   width: 90%;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -191,10 +205,10 @@ a {
 }
 
 .recipe-preview img {
-  width: 200px; 
-  height: auto; 
+  width: 200px;
+  height: auto;
   border-radius: 10px;
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 .recipe-preview h2 {
@@ -249,7 +263,8 @@ a {
 }
 
 .read-more:hover {
-text-decoration: underline;}
+  text-decoration: underline;
+}
 
 .recipe-title {
   text-align: center;
@@ -271,8 +286,6 @@ text-decoration: underline;}
   display: block;
   margin: 20px auto;
 }
-
-/**************/
 
 .contact-form-container {
   width: 100%;
@@ -325,7 +338,6 @@ text-decoration: underline;}
   background-color: #0056b3;
 }
 
-/* Contact.css */
 .contact-form-container {
   text-align: center;
   padding: 20px;
@@ -347,69 +359,75 @@ text-decoration: underline;}
   color: #007bff;
 }
 
-/*-----------------*/
 
 .contact-container {
-    padding: 20px;
+  padding: 20px;
 }
 
-.contact-info, .consultation-info, .social-media {
-    margin-bottom: 20px;
+.contact-info,
+.consultation-info,
+.social-media {
+  margin-bottom: 20px;
 }
 
-.contact-info h2, .consultation-info h2, .social-media h2 {
-    margin-bottom: 10px;
+.contact-info h2,
+.consultation-info h2,
+.social-media h2 {
+  margin-bottom: 10px;
 }
 
 .contact-details {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .contact-item p {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .social-icons a {
-    margin-right: 15px;
-    color: #fff;
-    text-decoration: none;
+  margin-right: 15px;
+  color: #fff;
+  text-decoration: none;
 }
 
-/* media query */
-/* Mobile Devices (Max Width: 768px) */
+/* Mobil Devices (Max Width: 768px) */
 @media (max-width: 768px) {
-
-  /* Navbar */
-  .navbar {
-    flex-direction: column;
-    padding: 10px;
-    text-align: center;
+  .hamburger {
+    display: block;
   }
 
   .navbar ul {
-    display: flex;
     flex-direction: column;
+    display: none;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+  }
+
+  .navbar ul.active {
+    display: flex;
   }
 
   .navbar ul li {
     margin: 10px 0;
   }
 
-  /* Hero Section */
   .hero-text h1 {
     font-size: 36px;
   }
 
   .hero-text p {
-    font-size: 14px;
-    margin: 10px 0;
+    font-size: 16px;
   }
 
   .btn {
@@ -417,48 +435,47 @@ text-decoration: underline;}
     padding: 10px 20px;
   }
 
-  .social-icons {
-    margin-top: 10px;
-  }
-
-  /* Blog & Recipe Lists */
-  .blog-list, .recipe-list {
+  .blog-list {
     flex-direction: column;
   }
 
-  .blog-preview, .recipe-preview {
+  .blog-preview {
     flex-basis: 100%;
     margin-bottom: 20px;
+  }
+
+  .recipe-list {
+    width: 100%;
+  }
+
+  .recipe-preview {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .recipe-preview img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .recipe-content {
+    margin: 0;
+  }
+
+  .read-more {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .navbar h1 {
+    font-size: 1rem;
   }
 }
 
 /* Tablets (Max Width: 1024px) */
 @media (max-width: 1024px) {
-  .navbar {
-    padding: 10px;
-  }
-
-  .navbar ul li {
-    margin: 5px 10px;
-  }
-
-  .hero-text h1 {
-    font-size: 48px;
-  }
-
-  .hero-text p {
-    font-size: 16px;
-  }
-
-  .btn {
-    font-size: 16px;
-  }
-
-  .blog-list, .recipe-list {
-    flex-direction: column;
-  }
-
-  .blog-preview, .recipe-preview {
-    flex-basis: 48%;
+  .navbar h1 {
+    font-size: 1.5rem;
   }
 }
