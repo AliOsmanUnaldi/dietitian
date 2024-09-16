@@ -16,13 +16,13 @@ const Home = () => {
                     <Link to="/dietitian/contact">Yeni yaşam tarzına ilk adım</Link>
                 </button>
                 <div className='social-icons'>
-                    <a href="mailto:your-email@example.com" aria-label="Email">
+                    <a href="mailto:dyt.emintatlilioglu@gmail.com " aria-label="Email">
                         <FaEnvelope size={24} />
                     </a>
-                    <a href="https://wa.me/yourwhatsappnumber" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/+905546529862" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
                         <FaWhatsapp size={24} />
                     </a>
-                    <a href="https://www.instagram.com/yourinstagramprofile" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/eminhealth" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                         <FaInstagram size={24} />
                     </a>
                 </div>

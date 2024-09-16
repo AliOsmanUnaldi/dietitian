@@ -7,7 +7,7 @@ const Contact = () => {
             <div className="info">
                 <p>Sosyal medyadan veya mailden şimdi iletişime geçin.</p>
                 <div className="social-icons">
-                    <a href="mailto:aliunaldizcb@gmail.com" aria-label="Email">
+                    <a href="mailto:dyt.emintatlilioglu@gmail.com " aria-label="Email">
                         <FaEnvelope size={24} />
                     </a>
                     <a href="https://wa.me/+905546529862" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
