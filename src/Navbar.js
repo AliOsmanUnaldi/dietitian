@@ -9,6 +9,10 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <h1>Dyt. Emin Tatlılıoğlu</h1>
@@ -16,11 +20,11 @@ const Navbar = () => {
         {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
       </button>
       <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
-        <li><Link to="/dietitian/">Ana Sayfa</Link></li>
-        <li><Link to="/dietitian/recipes">Tarifler</Link></li>
-        <li><Link to="/dietitian/blogs">Bloglar</Link></li>
-        <li><Link to="/dietitian/about">Hakkında</Link></li>
-        <li><Link to="/dietitian/contact"><button className='btn'>İletişim</button></Link></li>
+        <li><Link to="/dietitian/" onClick={closeMenu}>Ana Sayfa</Link></li>
+        <li><Link to="/dietitian/recipes" onClick={closeMenu}>Tarifler</Link></li>
+        <li><Link to="/dietitian/blogs" onClick={closeMenu}>Bloglar</Link></li>
+        <li><Link to="/dietitian/about" onClick={closeMenu}>Hakkında</Link></li>
+        <li><Link to="/dietitian/contact"><button className='btn' onClick={closeMenu}>İletişim</button></Link></li>
       </ul>
     </nav>
   );
