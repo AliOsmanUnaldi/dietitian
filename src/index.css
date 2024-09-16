@@ -33,29 +33,23 @@ a {
   padding-right: 10%;
 }
 
-/* Hamburger butonu */
+.navbar h1 {
+  width: 180px;
+}
+
+.navbar ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px 20px;
+  font-size: 16px;
+}
+
 .hamburger {
   background: none;
   border: none;
   color: #fff;
   cursor: pointer;
   display: none;
-  /* Başlangıçta gizle */
-}
-
-.navbar h1 {
-  width: 180px;
-}
-
-.navbar ul {
-  display: flex;
-  list-style: none;
-}
-
-.navbar ul li {
-  display: inline-block;
-  margin: 5px 20px;
-  font-size: 16px;
 }
 
 .container {
@@ -133,8 +127,6 @@ a {
   position: relative;
 }
 
-/* blog ve tarif kartları */
-
 .caption {
   border-radius: 10px;
   position: absolute;
@@ -179,8 +171,6 @@ a {
   display: block;
   margin: 20px auto;
 }
-
-/******************/
 
 .recipe-list {
   margin: 80px auto;
