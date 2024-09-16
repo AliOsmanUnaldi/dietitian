@@ -381,3 +381,84 @@ text-decoration: underline;}
     color: #fff;
     text-decoration: none;
 }
+
+/* media query */
+/* Mobile Devices (Max Width: 768px) */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  /* Hero Section */
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  /* Blog & Recipe Lists */
+  .blog-list, .recipe-list {
+    flex-direction: column;
+  }
+
+  .blog-preview, .recipe-preview {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablets (Max Width: 1024px) */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar ul li {
+    margin: 5px 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 48px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  .blog-list, .recipe-list {
+    flex-direction: column;
+  }
+
+  .blog-preview, .recipe-preview {
+    flex-basis: 48%;
+  }
+}
