@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import Blogs from './Blogs';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import BlogDetails from './BlogDetails';
 import Home from './Home';
 import Recipes from './Recipes';
