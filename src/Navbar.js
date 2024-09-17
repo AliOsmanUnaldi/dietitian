@@ -20,11 +20,11 @@ const Navbar = () => {
         {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
       </button>
       <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
-        <li><Link to="/#/" onClick={closeMenu}>Ana Sayfa</Link></li>
-        <li><Link to="/#/recipes" onClick={closeMenu}>Tarifler</Link></li>
-        <li><Link to="/#/blogs" onClick={closeMenu}>Bloglar</Link></li>
-        <li><Link to="/#/about" onClick={closeMenu}>Hakkında</Link></li>
-        <li><Link to="/#/contact"><button className='btn' onClick={closeMenu}>İletişim</button></Link></li>
+        <li><Link to="/" onClick={closeMenu}>Ana Sayfa</Link></li>
+        <li><Link to="/recipes" onClick={closeMenu}>Tarifler</Link></li>
+        <li><Link to="/blogs" onClick={closeMenu}>Bloglar</Link></li>
+        <li><Link to="/about" onClick={closeMenu}>Hakkında</Link></li>
+        <li><Link to="/contact"><button className='btn' onClick={closeMenu}>İletişim</button></Link></li>
       </ul>
     </nav>
   );
